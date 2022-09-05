@@ -1,0 +1,648 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 60px;
+    color: #fff;
+    font-weight: 600;
+    padding: 0px 0px 20px 0px;
+    line-height: 1.2em;
+}
+h2{
+    font-size: 30px;
+    color: #fff;
+    padding-top: 20px;
+}
+p{
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.2em;
+    margin-bottom: 50px;
+}
+
+header{
+    background: #111;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+    border-bottom: solid 4px #DBF14C;
+    z-index: 2;
+    position: fixed;
+    
+}
+.bannerAddPadding{
+    padding-top: 175px;
+}
+.paddindRemove{
+    padding-bottom: 20px;
+}
+
+
+.container{
+    max-width: 1040px;
+    margin: auto;   
+    padding: 0px 20px 0px 20px;
+    display: flex;
+}
+
+.rowBox .logo{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.rowBox:nth-child(1) a span{
+    font-size: 30px;
+    color: rgb(219, 241, 76);
+}
+
+.rowBox:nth-child(1){
+    width: 50%;
+}
+
+.rowBox:nth-child(2){
+    width: 50%;
+}
+
+.rowBox:nth-child(2) .navMenu{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    list-style: none;
+
+    
+}
+.rowBox:nth-child(2) .navMenu .menuList .menuLink{
+    text-transform: capitalize;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 100ms ease-in-out;
+    color: #fff;
+}
+
+.rowBox:nth-child(2) .navMenu .menuList .menuLink:hover{
+    color: #DBF14C;
+}
+.rowBox:nth-child(2) .navMenu .menuList .menuLink::after{
+    content: "";
+    background: #DBF14C;
+    width: 0px;
+    display: block;
+    transition: 100ms ease-in-out;
+    height: 5px;
+    border-radius: 10px;
+}
+
+.rowBox:nth-child(2) .navMenu .menuList .menuLink:hover::after{
+    width: 100%;
+}
+
+.rowBox:nth-child(2) .navMenu .navLogin{
+    background: #DBF14C;
+    padding: 12px 30px 12px 30px;
+    border-radius: 5px;
+    color: #111;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    transition: 100ms ease-in-out;
+}
+.rowBox:nth-child(2) .navMenu .navLogin:hover{
+    background: rgb(227, 228, 216);
+    
+}
+
+/* 
+This is responsive menu */
+.toggleBtn{
+    display: none;
+}
+
+
+.menu{
+    display: none;
+    visibility: hidden;
+}
+
+
+section{
+    background: rgb(23, 21, 21);
+    width: 100%;
+    padding: 100px 0px 100px 0px;
+}
+
+.name{
+    color: #DBF14C;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.ctaBtn{
+    background: #DBF14C;
+    text-decoration: none;
+    color: #111;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 18px 30px 18px;
+    transition: 100ms ease-in-out;
+}
+.ctaBtn:hover{
+    background: rgb(227, 228, 216);
+}
+
+
+
+
+.banner .rowBox:nth-child(1){
+    margin: auto;
+}
+
+.banner .rowBox:nth-child(2){
+    display: flex;
+    margin: auto;
+}
+
+.banner .rowBox:nth-child(2) .jeromeImage{
+  margin: auto;   
+  border: solid 4px #DBF14C;
+  box-shadow: 20px 20px 1px #DBF14C;
+}
+
+.jeromeImage img{
+    width: 300px;
+    height: 300px;
+}
+
+/* This is about section */
+
+.aboutSection{
+    background-image: url('../images/Bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+   
+}
+
+.geerColor1{
+    color: #fff;
+    transform: translateX(200px);
+    font-size: 50px;
+}
+.geerColor2{
+    color: #fff;
+    font-size: 50px;
+}
+.geerColor3{
+    color: #111;
+    position: absolute;
+    margin-top: 60px;
+    font-size: 75px;
+}
+
+.headingAbout{
+    color: #111;
+}
+
+.bodyText{
+    color: #111;
+}
+.about{
+    background: #111;
+    color: #fff;
+}
+.about:hover{
+    background: #DBF14C;
+    color: #111;
+    box-shadow: 1px 10px 10px rgba(17, 17, 17, 0.123);
+}
+
+/* 
+This is skills section */
+.aboutContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skillsrow:nth-child(1){
+    width: 450px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.skillsrow:nth-child(2){
+    width: 450px;
+    text-align: center;
+
+}
+
+
+.progress1, .progress2, .progress3, .progress4, .progress5{
+    height: 20px;
+    background: #fff;
+    margin: auto;
+    width: 80%;
+    margin: 20px 0px 20px 0px;
+    border-radius: 100px;
+}
+
+.progressInner1, .progressInner2, .progressInner3, .progressInner4, .progressInner5{
+    background: #DBF14C;
+    height: 20px;
+    width: 0%;
+    border-radius: 100px;
+    display: flex;
+    box-shadow: 0px 5px 10px rgba(17, 17, 17, 0.591);
+    transition: 2s linear;
+    
+
+}
+
+.counNumber1, .counNumber2, .counNumber3, .counNumber4, .counNumber5{
+    color: #111;
+    font-size: 15px;
+    margin: auto;
+    font-weight: 600;
+}
+.countC1, .countC2, .countC3, .countC4{
+    color: #fff;
+    font-size: 15px;
+    margin: auto;
+    font-weight: 600;
+}
+
+
+
+/* This is for circle progress bar */
+
+.holderProgress{
+    width: 100%;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: auto auto;
+    display: grid;
+    padding: 20px;
+
+}
+
+
+
+.circleContainer{
+    width: 160px;
+    height: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px auto 0px auto;
+}
+
+
+
+
+.circleOutter{
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+.circleInner{
+    border-radius: 50%;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background: #111;
+}
+
+
+.circle1{
+    fill: none;
+    stroke: #DBF14C;
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: animateProgress1 2s linear forwards;
+}
+.circle2{
+    fill: none;
+    stroke: #DBF14C;
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: animateProgress2 2.50s linear forwards;
+}
+.circle3{
+    fill: none;
+    stroke: #DBF14C;
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: animateProgress3 1s linear forwards;
+}
+.circle4{
+    fill: none;
+    stroke: #DBF14C;
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: animateProgress4 1s linear forwards;
+}
+
+
+@keyframes animateProgress1{
+    100%{
+        stroke-dashoffset: 250;
+    }
+}
+@keyframes animateProgress2{
+    100%{
+        stroke-dashoffset: 230;
+    }
+}
+@keyframes animateProgress3{
+    100%{
+        stroke-dashoffset: 250;
+    }
+}
+@keyframes animateProgress4{
+    100%{
+        stroke-dashoffset: 250;
+    }
+}
+
+.progressC{
+   transform: translate(0px, -100%);
+}
+
+
+
+/* This is the code for resposive */
+
+@media(max-width: 860px) {
+    
+ 
+    .rowBox:nth-child(2) .navMenu {
+        display: none;
+    }
+
+    .rowBox:nth-child(2){
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .toggleBtn{
+        width: 30px;
+        display: block;
+        height: 30px;        
+        cursor: pointer;
+    }
+
+    .toggleBtn .line1{
+        background: #fff;
+        width: 100%;
+        margin: 4px 0px 0px 0px;
+        height: 4px;
+        border-radius: 100px;
+        transition: 100ms ease-in-out;
+    }
+
+    .toggleBtn .line2{
+        background: #fff;
+        width: 100%;
+        margin: 5px 0px 0px 0px;
+        height: 4px;
+        border-radius: 100px;
+        transition: 200ms ease-in-out;
+    }
+    .toggleBtn .line3{
+        background: #fff;
+        width: 100%;
+        margin: 5px 0px 0px 0px;
+        height: 4px;
+        border-radius: 100px;
+        transition: 100ms ease-in-out;
+    }
+
+    /* ANIMATE */
+    .toggleBtn.open .line1{
+        background: rgb(219, 241, 76);;
+        transform: rotate(40deg);
+        position: relative;
+        top: 9px;
+    }
+    .toggleBtn.open .line2{
+        background: rgb(219, 241, 76);;
+        position: relative;
+        left: -20px;
+        opacity: 0;
+    }
+    .toggleBtn.open .line3{
+        background: rgb(219, 241, 76);;
+        position: relative;
+        transform: rotate(-40deg);
+        top: -9px;
+    }
+
+
+
+
+    /* posonsive menu */
+    .menu{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        display: none;
+        visibility: visible;
+    }
+    
+    .containerMenu{
+        background: #111;
+        width: 70%;
+        margin: 50px 0px 0px auto;
+        border-bottom-left-radius: 100px;
+        height: 65%;
+        display: flex;
+        animation: animate 1s;
+    }
+    .paddindRemove{
+        padding-bottom: 120px;
+    }
+
+    @keyframes animate {
+        from{
+            transform: translateY(-100%);
+        }   
+        to{
+            transform: translateY(0%);
+        }
+    }    
+
+
+    .reposiveMenu{
+        list-style: none;
+        margin: auto;
+        
+    }
+    .reposiveMenu .menuListR .menuLinkR{
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 2em;
+        transition: 100ms ease-in-out;
+        color: #fff;
+    }
+    .reposiveMenu .menuListR .menuLinkR:hover{
+        color: #DBF14C;
+    }
+    
+    .menuLinkR i{
+        margin-right: 10px;
+    }
+    
+    
+    .menuLinkR::after{
+        content: "";
+        background: #DBF14C;
+        width: 0px;
+        display: block;
+        transition: 100ms ease-in-out;
+        height: 5px;
+        border-radius: 10px;
+    }
+    .menuLinkR:hover:after{
+        width: 100%;
+    }
+    
+    .navLoginR{
+        background: rgb(219, 241, 76);
+        padding: 12px 30px 12px 30px;
+        border-radius: 5px;
+        color: #111;
+        text-decoration: none;
+        font-size: 20px;
+        text-transform: capitalize;
+        transition: 100ms ease-in-out;
+        position: relative;
+        top: 30px;
+    }
+    
+    .navLoginR:hover{
+       
+        background: rgb(227, 228, 216);
+        
+    }
+
+    /* This is code banner section */
+
+    .banner{
+        margin: auto;
+        flex-direction: column-reverse;
+    }
+    .banner .rowBox:nth-child(1){
+        width: 80%;
+        text-align: center;
+    }
+    .banner .rowBox:nth-child(2){
+        margin-bottom: 50px;
+        width: 80%;
+    }
+    h1{
+        font-size: 45px;
+    }
+
+    /* This is about section */
+
+    .aboutContainer .rowBox:nth-child(1){
+        width: 80%;
+        text-align: center;
+        margin: auto;
+    }
+    .aboutContainer .rowBox:nth-child(2){
+        margin-bottom: 50px;
+        width: 80%;
+        display: flow-root;
+        margin: auto;
+        text-align: center;
+    }
+    .geerColor3{
+        font-size: 10vw;
+        margin-bottom: 10px;
+    }
+
+    /* This is skills section  */
+
+    .skills{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skills{
+        flex-wrap: wrap;
+    }
+}
+
+
+
+/* This is skills section */
+
+
+
+
+/* 
+Mobile view */
+
+@media(max-width: 500px){
+
+    
+
+    h1{
+        font-size: 30px;
+    }
+    .banner{
+        margin: auto;
+        flex-direction: column-reverse;
+    }
+    .banner .rowBox:nth-child(1){
+        width: 100%;
+        text-align: center;
+    }
+    .banner .rowBox:nth-child(2){
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .jeromeImage img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .svgImage{
+        width: 250px;
+        height: 250px;
+    }
+
+    /* progress Circle */
+    .holderProgress{
+        grid-template-columns: 1fr;
+    }
+}
