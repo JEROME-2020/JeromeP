@@ -29,7 +29,7 @@ p{
 }
 
 header{
-    background: #111;
+    background: #706d6d;
     width: 100%;
     padding: 20px 0px 20px 0px;
     border-bottom: solid 4px #DBF14C;
@@ -136,7 +136,7 @@ This is responsive menu */
 
 
 section{
-    background: rgb(23, 21, 21);
+    background: rgb(134 127 127);;
     width: 100%;
     padding: 100px 0px 100px 0px;
 }
