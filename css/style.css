@@ -2,37 +2,47 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+     box-sizing: border-box;
 }
 
 body{
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1{
     font-size: 35px;
-    color: #fff;
+    color: #c0ae7f;
     font-weight: 600;
     padding: 0px 0px 20px 0px;
     line-height: 1.2em;
 }
+
 h2{
-    font-size: 30px;
-    color: #fff;
+    font-size: 35px;
     padding-top: 20px;
+    padding: 0px 0px 10px 0px;
+    text-shadow: 1px 2px 4px #9c8f6c87;
+    color: #323336;
 }
+
 p{
     font-size: 18px;
-    color: #fff;
+    color: #dbd7cd;
     line-height: 1.2em;
     margin-bottom: 50px;
 }
 
+li{
+    color: #323336;
+    font-size: 15px;
+}
+
 header{
-    background: #706d6d;
+    background: #323336;
     width: 100%;
     padding: 20px 0px 20px 0px;
-    border-bottom: solid 4px #DBF14C;
+    border-bottom: solid 4px #dbd7cd;
     z-index: 2;
     position: fixed;
     
@@ -40,9 +50,7 @@ header{
 .bannerAddPadding{
     padding-top: 175px;
 }
-.paddindRemove{
-    padding-bottom: 20px;
-}
+
 
 
 .container{
@@ -54,16 +62,17 @@ header{
 
 .rowBox .logo{
     text-decoration: none;
-    color: #fff;
+    color: #dbd7cd;
     font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 
 .rowBox:nth-child(1) a span{
     font-size: 30px;
-    color: rgb(219, 241, 76);
+    color: #c0ae7f;
 }
 
 .rowBox:nth-child(1){
@@ -87,15 +96,15 @@ header{
     font-size: 18x;
     text-decoration: none;
     transition: 100ms ease-in-out;
-    color: #fff;
+    color: #dbd7cd;
 }
 
 .rowBox:nth-child(2) .navMenu .menuList .menuLink:hover{
-    color: #DBF14C;
+    color: #dbd7cd;
 }
 .rowBox:nth-child(2) .navMenu .menuList .menuLink::after{
     content: "";
-    background: #DBF14C;
+    background: #dbd7cd;
     width: 0px;
     display: block;
     transition: 100ms ease-in-out;
@@ -108,15 +117,16 @@ header{
 }
 
 .rowBox:nth-child(2) .navMenu .navLogin{
-    background: #DBF14C;
+    background: #dbd7cd;
     padding: 12px 30px 12px 30px;
     border-radius: 5px;
-    color: #111;
+    color: #323336;
     text-decoration: none;
     font-size: 18px;
     text-transform: capitalize;
     transition: 100ms ease-in-out;
 }
+
 .rowBox:nth-child(2) .navMenu .navLogin:hover{
     background: rgb(227, 228, 216);
     
@@ -136,21 +146,21 @@ This is responsive menu */
 
 
 section{
-    background: rgb(134 127 127);;
+    background: #323336;
     width: 100%;
     padding: 100px 0px 100px 0px;
 }
 
 .name{
-    color: #DBF14C;
+    color: #dbd7cd;
     cursor: pointer;
     letter-spacing: 2px;
 }
 
 .ctaBtn{
-    background: #DBF14C;
+    background: #dbd7cd;
     text-decoration: none;
-    color: #111;
+    color: #323336;
     font-size: 18px;
     border-radius: 5px;
     padding: 18px 30px 18px;
@@ -174,21 +184,24 @@ section{
 
 .banner .rowBox:nth-child(2) .jeromeImage{
   margin: auto;   
-  border: solid 4px #DBF14C;
-  box-shadow: 20px 20px 1px #DBF14C;
+  border: solid 4px #dbd7cd;
+  border-radius: 5%;
+  box-shadow: 20px 20px 1px #c0ae7f;
 }
 
 .jeromeImage img{
     width: 300px;
+    border-radius: 5%;
     height: 300px;
 }
 
 /* This is about section */
 
 .aboutSection{
-    background-image: url('../images/Bg.jpg');
+    /* background-image: url('../images/Bg.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+    background: #fff;
     background-position: center bottom;
    
 }
@@ -232,6 +245,7 @@ This is skills section */
     display: flex;
     flex-wrap: wrap;
 }
+
 
 .skillsrow:nth-child(1){
     width: 450px;
@@ -281,6 +295,9 @@ This is skills section */
     font-weight: 600;
 }
 
+section#skills {
+    background: #fff;
+}
 
 
 /* This is for circle progress bar */
@@ -645,4 +662,212 @@ Mobile view */
     .holderProgress{
         grid-template-columns: 1fr;
     }
+}
+
+@media screen and (max-width: 980px) {
+  .columns .column {
+    margin-bottom: 5px;
+    flex-basis: 40%;
+  }
+  .columns .column:nth-last-child(2) {
+    margin-right: 0;
+  }
+  .columns .column:last-child {
+    flex-basis: 100%;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 680px) {
+  .columns .column {
+    flex-basis: 100%;
+    margin: 0 0 5px 0;
+  }
+}
+
+.columns {
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+    margin: auto;
+}
+
+.column {
+	flex: 1;
+	border: none;
+	margin: 2px;
+    padding: 26px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px #11111140;
+	
+}
+
+
+.wrapper {
+	padding: 5px;
+	max-width: 960px;
+	width: 95%;
+	margin: 20px auto;
+}
+
+
+
+/* Float four columns side by side */
+.rowProject .column {
+  float: left;
+  padding: 0 10px;
+  align-items: center;
+}
+
+/* Remove extra left and right margins, due to padding */
+.rowProject {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.rowProject:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+   .rowProject .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.rowProject .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+
+/* 
+///////////// */
+
+.ProjectSection{
+    text-align: center;
+    background: #ffffff;
+}
+
+.work-xp{
+    height: 20px;
+    display: flex;
+    padding: 0;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-text-xp{
+    color: #fff;
+}
+
+.work-xp .marquee-image{
+    width: 150px;
+    padding: 0px 0px 0px 20px;
+}
+
+.work-xp .gcrayons-resize{
+    width: 90px;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+		-webkit-tap-highlight-color: transparent;
+}
+
+.button {
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+	color: #323336;
+	border: 1px solid #c0ae7f;
+	box-shadow: 5px 5px 0 #c0ae7f,
+		-5px -5px 0 #c0ae7f,
+		-5px 5px 0 #c0ae7f,
+		5px -5px 0 #c0ae7f;
+	transition: 100ms ease-in-out;
+}
+
+.button:hover {
+	box-shadow: 20px 5px 0 #c0ae7f, -20px -5px 0 #c0ae7f;
+}
+
+.button:focus {
+	outline: none;
+}
+
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+/* Main CSS */
+.grid-wrapper > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.grid-wrapper > div > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 5px;
+}
+
+.grid-wrapper {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-auto-rows: 200px;
+	grid-auto-flow: dense;
+}
+.grid-wrapper .wide {
+	grid-column: span 2;
+}
+.grid-wrapper .tall {
+	grid-row: span 2;
+}
+.grid-wrapper .big {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+.project-cont{
+
+}
+.project-cont div:nth-child(1){
+    background: red;
+    width: 220px;
+    height: 300px;
+    margin: auto;
+}
+
+
+.project-cont .columns{
+    margin: auto;
+    padding: 0;
+}
+
+.project-cont .column{
+    box-shadow: none !important;
 }
