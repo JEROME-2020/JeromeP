@@ -695,7 +695,6 @@ Mobile view */
 .column {
 	flex: 1;
 	border: none;
-	margin: 2px;
     padding: 26px;
     margin: 10px;
     border-radius: 5px;
@@ -852,22 +851,35 @@ img {
 	grid-row: span 2;
 }
 
-.project-cont{
 
-}
+
 .project-cont div:nth-child(1){
     background: red;
-    width: 220px;
-    height: 300px;
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
     margin: auto;
 }
 
+.project-cont div:nth-child(2){
+    background: green;
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    margin: auto;
+}
 
 .project-cont .columns{
     margin: auto;
     padding: 0;
 }
 
-.project-cont .column{
-    box-shadow: none !important;
+.project-cont{
+    box-shadow: none;
+    padding: 0;
+    margin: 20;
 }
