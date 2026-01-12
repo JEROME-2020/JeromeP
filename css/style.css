@@ -854,19 +854,19 @@ img {
 
 
 .project-cont div:nth-child(1){
-    background: red;
+    border: solid 1px #555;
     width: 280px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 150px;
+    height: 200px;
     margin: auto;
 }
 
 .project-cont div:nth-child(2){
-    background: green;
     width: 280px;
     display: flex;
+     border: solid 1px #555;
     justify-content: center;
     align-items: center;
     height: 70px;
@@ -881,5 +881,6 @@ img {
 .project-cont{
     box-shadow: none;
     padding: 0;
+    border: solid 1px #555;
     margin: 20;
 }
